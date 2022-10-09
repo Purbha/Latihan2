@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView_Main_Picture"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/danboo"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/danbo" />
+
     <TextView
         android:id="@+id/textView_Main_Header"
         android:layout_width="wrap_content"
@@ -17,18 +28,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_Main_Gambar" />
-
-    <ImageView
-        android:id="@+id/imageView_Main_Gambar"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        android:scaleType="fitXY"
-        android:contentDescription="@string/imageView_Main_Gambar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/danbo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_Main_Picture" />
 
     <TextView
         android:id="@+id/textView_Main_Desc"
